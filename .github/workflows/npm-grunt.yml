@@ -26,10 +26,10 @@ jobs:
       run: |
         cd Back-end
         npm install
-        grunt
+        npx grunt
 
     - name: Install and Build Frontend
       run: |
         cd Front-end
         npm install
-        grunt
+        npx grunt
