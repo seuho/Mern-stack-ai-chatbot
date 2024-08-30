@@ -22,7 +22,14 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Build
+    - name: Install and build Backend
       run: |
+        cd Back-end
+        npm install
+        grunt
+
+    - name: Install and Build Frontend
+      run: |
+        cd Front-end
         npm install
         grunt
